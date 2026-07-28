@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #0a9396;
+    --accent1-color: #001219;
+    --accent2-color: #94d2bd;
+
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(148, 210, 189, 0.9);
+    padding: 1rem;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    margin-left: 1rem;
+}
+
+.history {
+    padding: 2rem 0;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.adventures {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.adventures h2 {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.adventures figure {
+    width: 250px;
+    margin: 0;
+}
+
+.adventures img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.adventures figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
