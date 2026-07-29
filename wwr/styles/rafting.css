@@ -150,14 +150,21 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem auto;
-    padding: 1rem 0;
-    border-top: 1px solid var(--border-color);
+    width: 840px;
+    margin: 20px auto;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 0;
 }
 
 .socialmedia {
     display: flex;
-    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
 }
 
 .socialmedia a {
@@ -165,6 +172,9 @@ footer {
 }
 
 .socialmedia img {
-    width: 32px;
-    height: 32px;
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: contain;
 }
