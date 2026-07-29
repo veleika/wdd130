@@ -1,12 +1,21 @@
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #0a9396;
+    --accent1-color: #001219;
+    --accent2-color: #94d2bd;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--body-font);
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
 nav {
-    background-color: steelblue;
+    background-color: var(--primary-color);
     padding: 10px;
     display: flex;
 }
@@ -19,8 +28,13 @@ nav a {
     display: block;
 }
 
-h1 {
-    color: steelblue;
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
 main {
@@ -30,7 +44,7 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #000;
+    border: 1px solid var(--accent1-color);
     padding: 2px;
     box-shadow: 0 0 20px gray;
 }
@@ -38,10 +52,10 @@ main img {
 aside {
     width: 420px;
     margin: 20px auto;
-    border: 1px solid #000;
+    border: 1px solid var(--accent1-color);
     padding: 15px;
-    background-color: #eeeeee;
-    color: #333;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 aside img {
@@ -56,8 +70,9 @@ p {
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-    padding-top: 10px;
+    background-color: var(--secondary-color);
+}
+
+.adventures figure {
+    background-color: var(--accent2-color);
 }
