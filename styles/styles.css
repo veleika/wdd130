@@ -1,21 +1,12 @@
-:root {
-    --primary-color: #005f73;
-    --secondary-color: #0a9396;
-    --accent1-color: #001219;
-    --accent2-color: #94d2bd;
-    --heading-font: Georgia, serif;
-    --body-font: Arial, Helvetica, sans-serif;
-}
-
 body {
-    font-family: var(--body-font);
+    font-family: Arial, Helvetica, sans-serif;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
 nav {
-    background-color: var(--primary-color);
+    background-color: steelblue;
     padding: 10px;
     display: flex;
 }
@@ -28,13 +19,8 @@ nav a {
     display: block;
 }
 
-nav a:hover {
-    background-color: var(--secondary-color);
-}
-
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+h1 {
+    color: steelblue;
 }
 
 main {
@@ -44,7 +30,7 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid var(--accent1-color);
+    border: 1px solid #000;
     padding: 2px;
     box-shadow: 0 0 20px gray;
 }
@@ -52,10 +38,10 @@ main img {
 aside {
     width: 420px;
     margin: 20px auto;
-    border: 1px solid var(--accent1-color);
+    border: 1px solid #000;
     padding: 15px;
-    background-color: var(--accent2-color);
-    color: var(--accent1-color);
+    background-color: #eeeeee;
+    color: #333;
 }
 
 aside img {
@@ -70,9 +56,8 @@ p {
 }
 
 footer {
-    background-color: var(--secondary-color);
-}
-
-.adventures figure {
-    background-color: var(--accent2-color);
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding-top: 10px;
 }
