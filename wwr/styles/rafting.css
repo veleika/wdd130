@@ -1,6 +1,6 @@
 :root {
     --primary-color: #005f73;
-    --secondary-color: #005f73;
+    --secondary-color: #0a9396;
     --accent1-color: #001219;
     --accent2-color: #94d2bd;
     --heading-font: Georgia, serif;
@@ -109,18 +109,30 @@ nav a:focus {
 /* History */
 
 .history {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
     padding: 2rem 0;
 }
 
 .history h2 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.history p {
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.history-content p {
     text-align: justify;
 }
 
@@ -275,9 +287,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 840px;
+    margin: 2rem auto 0;
     border-top: 1px solid var(--border-color);
     padding: 20px;
-    margin-top: 2rem;
 }
 
 .socialmedia {
@@ -466,8 +479,13 @@ footer {
         grid-template-columns:1fr;
     }
 
-    .contact-layout{
-        grid-template-columns:1fr;
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .map {
+        height: auto;
     }
 
     footer{
